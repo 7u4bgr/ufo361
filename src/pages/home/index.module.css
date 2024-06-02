@@ -1,0 +1,129 @@
+.background {
+  animation: fadeIn 2s ease-in-out forwards;
+  display: flex;
+  justify-content: space-between;
+}
+.background .leftside {
+  display: flex;
+}
+.background .leftside ul {
+  display: flex;
+  gap: 76.51px;
+}
+.background .leftside ul li {
+  color: white;
+}
+.background .leftside .signin {
+  padding-top: 218px;
+}
+.background .leftside .signin h1 {
+  font-size: 64px;
+  line-height: 80px;
+  width: 500px;
+  color: white;
+}
+.background .leftside .signin p {
+  color: white;
+  padding-top: 50px;
+  width: 250px;
+  line-height: 30px;
+}
+.background .leftside .signin h2 {
+  padding-top: 10px;
+  color: #01E4BF;
+}
+.background .leftside .images {
+  position: relative;
+}
+.background .leftside .images img {
+  position: absolute;
+  top: -70px;
+  left: -250px;
+  width: 900px;
+}
+.background .rightside .headers1 ul {
+  display: flex;
+  gap: 76.51px;
+}
+.background .rightside .headers1 ul li {
+  color: white;
+}
+.background .rightside .headers1 ul .rightsignin {
+  cursor: pointer;
+  color: #01E4BF;
+}
+.background .rightside .inputs {
+  padding-top: 218px;
+}
+.background .rightside .inputs form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.background .rightside .inputs form input {
+  border-radius: 10px;
+  padding: 15px 20px;
+  outline: none;
+  border: none;
+}
+.background .rightside .inputs form input::-moz-placeholder {
+  font-family: "Roboto Mono", monospace !important;
+  font-optical-sizing: auto;
+}
+.background .rightside .inputs form input::placeholder {
+  font-family: "Roboto Mono", monospace !important;
+  font-optical-sizing: auto;
+}
+.background .rightside .inputs form h2 {
+  cursor: pointer;
+  color: #01E4BF;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 12px;
+}
+.background .rightside .inputs form button {
+  margin-top: 20px;
+  background-color: #01E4BF;
+  color: black;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 20px;
+}
+.background .rightside .inputs .hr {
+  padding-top: 50px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.background .rightside .inputs .hr hr {
+  border: 1px solid #DFDFDF;
+  outline: none;
+  width: 20%;
+}
+.background .rightside .inputs .hr h2 {
+  font-size: 14px;
+  color: #ACADAC;
+}
+.background .rightside .inputs .icons {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding-top: 20px;
+}
+.background .rightside .inputs .icons img {
+  cursor: pointer;
+  background-color: white;
+  padding: 15px;
+  border-radius: 30px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}/*# sourceMappingURL=index.module.css.map */

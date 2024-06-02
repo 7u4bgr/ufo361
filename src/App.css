@@ -1,0 +1,17 @@
+body {
+  font-family: "Roboto Mono", monospace !important;
+  font-optical-sizing: auto;
+}
+html {
+  scroll-behavior: smooth;
+}
+::-moz-selection {
+  color: rgb(0, 0, 0);
+  background: rgb(255, 255, 255);
+}
+
+::selection {
+  color: rgb(0, 0, 0);
+
+  background: rgb(255, 255, 255);
+}
