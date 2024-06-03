@@ -14,37 +14,37 @@ const Home = () => {
           <div className={styles.leftside}>
             <div className={styles.headers}>
               <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Blog</li>
-                <li>Pages</li>
-                <li>Contact</li>
+                <li className={styles.slideIn }>Home</li>
+                <li className={styles.slideIn }>About</li>
+                <li className={styles.slideIn }>Blog</li>
+                <li className={styles.slideIn }>Pages</li>
+                <li className={styles.slideIn }>Contact</li>
               </ul>
               <div className={styles.signin}>
-                <h1>Sign In to Space Direct</h1>
-                <p>if you don’t have an account you can </p>
-                <h2>Register here!</h2>
+                <h1 className={styles.slideIn }>Sign In to Space Direct</h1>
+                <p className={styles.slideIn }>if you don’t have an account you can </p>
+                <h2 className={styles.slideIn }>Register here!</h2>
               </div>
             </div>
             <div className={styles.images}>
-              <div className={styles.shadow}></div>
-              <img src={Vector} alt="" />
+          
+              <img className={styles.moveUpDown} src={Vector} alt="" />
             </div>
           </div>
           <div className={styles.rightside}>
             <div className={styles.headers1}>
               <ul>
-                <li>Dark Mode</li>
+                <li className={styles.slideIn}>Dark Mode</li>
                 <li className={styles.rightsignin}>Sign in</li>
                 <li className={styles.rightsignin}>Register</li>
               </ul>
             </div>
             <div className={styles.inputs}>
-              <form action="">
+              <form action="/">
                 <input type="email" placeholder="Enter Email" />
-                <input type="password" placeholder="••••••••" />
+                <input type="password" placeholder="••••••••"  />
                 <h2>Forgot Password ?</h2>
-                <button type="submit" value="submit">
+                <button type="submit">
                   Sign In
                 </button>
               </form>

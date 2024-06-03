@@ -1,7 +1,7 @@
 .background {
-    animation: fadeIn 2s ease-in-out forwards;
-    display: flex;
-    justify-content: space-between;
+  animation: fadeIn 2s ease-in-out forwards;
+  display: flex;
+  justify-content: space-between;
   .leftside {
     display: flex;
     ul {
@@ -11,125 +11,150 @@
         color: white;
       }
     }
-    .signin{
-        padding-top: 218px;
-        h1{
-            font-size: 64px;
-            line-height: 80px;
-            width: 500px;
-            color: white;
-
-        }
-        p{
-            color: white;
-            padding-top: 50px;
-            width: 250px;
-            line-height: 30px;
-        }
-        h2{
-            padding-top: 10px;
-            color: #01E4BF;
-        }
+    .signin {
+      padding-top: 218px;
+      h1 {
+        font-size: 64px;
+        line-height: 80px;
+        width: 500px;
+        color: white;
+      }
+      p {
+        color: white;
+        padding-top: 50px;
+        width: 250px;
+        line-height: 30px;
+      }
+      h2 {
+        padding-top: 10px;
+        color: #01e4bf;
+      }
     }
     .images {
       position: relative;
-  
-    
-      img {
+
+      .moveUpDown {
+        animation: moveUpDown 2s infinite;
         position: absolute;
         top: -70px;
         left: -250px;
         width: 900px;
-  
       }
     }
   }
-  .rightside{
-    .headers1{
-        ul {
-            display: flex;
-            gap: 76.51px;
-            li {
-              color: white;
-            }
-            .rightsignin{
-                cursor: pointer;
-                color: #01E4BF;
-            }
-          }
-    }
-    .inputs{
-        padding-top: 218px;
-        form{
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-            input{
-                border-radius: 10px;
-                padding: 15px 20px;
-                outline: none;
-                border: none;
-            }
-            input::placeholder{
-                font-family: "Roboto Mono", monospace !important;
-                font-optical-sizing: auto;
-            }
-            h2{
-                cursor: pointer;
-                color: #01E4BF;
-                display: flex;
-                justify-content: flex-end;
-                font-size: 12px;
-            }
-            button{
-                margin-top: 20px;
-                background-color: #01E4BF;
-                color: black;
-                cursor: pointer;
-                outline: none;
-                border: none;
-                border-radius: 10px;
-                padding: 15px 20px;
-            }
+  .rightside {
+    .headers1 {
+      ul {
+        display: flex;
+        gap: 76.51px;
+        li {
+          color: white;
         }
-        .hr{
-            padding-top: 50px;
-            display: flex;
-            align-items: center;
-            gap: 20px;
-            hr{
-                border:1px solid #DFDFDF;
-                outline: none;
-                width: 20%;
-            }
-            h2{
-                font-size: 14px;
-                color: #ACADAC;
-            }
-        }
-        .icons{
-            display: flex;
-            justify-content: center;
-            gap: 40px;
-            padding-top: 20px;
-          
+        .rightsignin {
+          animation: slideInFromLeft 1s ease-out forwards;
 
-            img{
-                cursor: pointer;
-                background-color: white;
-                padding: 15px;
-                border-radius: 30px;
-            }
+          cursor: pointer;
+          color: #01e4bf;
         }
+      }
     }
+    .inputs {
+      padding-top: 218px;
+    animation: slideInFromLeft 1s ease-out forwards;
 
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        input {
+          border-radius: 10px;
+          padding: 15px 20px;
+          outline: none;
+          border: none;
+        }
+        input::placeholder {
+          font-family: "Roboto Mono", monospace !important;
+          font-optical-sizing: auto;
+        }
+        h2 {
+          cursor: pointer;
+          color: #01e4bf;
+          display: flex;
+          justify-content: flex-end;
+          font-size: 12px;
+        }
+        button {
+          margin-top: 20px;
+          background-color: #01e4bf;
+          color: black;
+          cursor: pointer;
+          outline: none;
+          border: none;
+          border-radius: 10px;
+          padding: 15px 20px;
+        }
+      }
+      .hr {
+        padding-top: 50px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        hr {
+          border: 1px solid #dfdfdf;
+          outline: none;
+          width: 20%;
+        }
+        h2 {
+          font-size: 14px;
+          color: #acadac;
+        }
+      }
+      .icons {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        padding-top: 20px;
+
+        img {
+          cursor: pointer;
+          background-color: white;
+          padding: 15px;
+          border-radius: 30px;
+        }
+      }
+    }
   }
 }
 @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
+  from {
+    opacity: 0;
   }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(30px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes slideInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.slideIn {
+  animation: slideInFromLeft 1s ease-out forwards;
+}

@@ -30,12 +30,13 @@
 }
 .background .leftside .signin h2 {
   padding-top: 10px;
-  color: #01E4BF;
+  color: #01e4bf;
 }
 .background .leftside .images {
   position: relative;
 }
-.background .leftside .images img {
+.background .leftside .images .moveUpDown {
+  animation: moveUpDown 2s infinite;
   position: absolute;
   top: -70px;
   left: -250px;
@@ -49,11 +50,13 @@
   color: white;
 }
 .background .rightside .headers1 ul .rightsignin {
+  animation: slideInFromLeft 1s ease-out forwards;
   cursor: pointer;
-  color: #01E4BF;
+  color: #01e4bf;
 }
 .background .rightside .inputs {
   padding-top: 218px;
+  animation: slideInFromLeft 1s ease-out forwards;
 }
 .background .rightside .inputs form {
   display: flex;
@@ -76,14 +79,14 @@
 }
 .background .rightside .inputs form h2 {
   cursor: pointer;
-  color: #01E4BF;
+  color: #01e4bf;
   display: flex;
   justify-content: flex-end;
   font-size: 12px;
 }
 .background .rightside .inputs form button {
   margin-top: 20px;
-  background-color: #01E4BF;
+  background-color: #01e4bf;
   color: black;
   cursor: pointer;
   outline: none;
@@ -98,13 +101,13 @@
   gap: 20px;
 }
 .background .rightside .inputs .hr hr {
-  border: 1px solid #DFDFDF;
+  border: 1px solid #dfdfdf;
   outline: none;
   width: 20%;
 }
 .background .rightside .inputs .hr h2 {
   font-size: 14px;
-  color: #ACADAC;
+  color: #acadac;
 }
 .background .rightside .inputs .icons {
   display: flex;
@@ -126,4 +129,28 @@
   to {
     opacity: 1;
   }
+}
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(30px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes slideInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.slideIn {
+  animation: slideInFromLeft 1s ease-out forwards;
 }/*# sourceMappingURL=index.module.css.map */
